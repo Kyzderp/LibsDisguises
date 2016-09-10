@@ -3,23 +3,9 @@ package me.libraryaddict.disguise;
 import java.io.IOException;
 import java.lang.reflect.Field;
 
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Ageable;
-import org.bukkit.entity.Creature;
-import org.bukkit.entity.Damageable;
-import org.bukkit.entity.Entity;
-import org.bukkit.entity.LivingEntity;
-import org.bukkit.entity.Tameable;
-import org.bukkit.entity.Zombie;
-import org.bukkit.event.HandlerList;
-import org.bukkit.plugin.java.JavaPlugin;
-
-import com.comphenix.protocol.reflect.FieldAccessException;
-import com.comphenix.protocol.wrappers.WrappedDataWatcher;
-import com.comphenix.protocol.wrappers.WrappedWatchableObject;
-
 import me.libraryaddict.disguise.commands.CloneDisguiseCommand;
 import me.libraryaddict.disguise.commands.DisguiseCommand;
+import me.libraryaddict.disguise.commands.DisguiseListCommand;
 import me.libraryaddict.disguise.commands.DisguiseViewSelf;
 import me.libraryaddict.disguise.commands.EntityDisguiseCommand;
 import me.libraryaddict.disguise.commands.HelpDisguiseCommand;
@@ -53,6 +39,21 @@ import me.libraryaddict.disguise.utilities.FakeBoundingBox;
 import me.libraryaddict.disguise.utilities.Metrics;
 import me.libraryaddict.disguise.utilities.PacketsManager;
 import me.libraryaddict.disguise.utilities.ReflectionManager;
+
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Ageable;
+import org.bukkit.entity.Creature;
+import org.bukkit.entity.Damageable;
+import org.bukkit.entity.Entity;
+import org.bukkit.entity.LivingEntity;
+import org.bukkit.entity.Tameable;
+import org.bukkit.entity.Zombie;
+import org.bukkit.event.HandlerList;
+import org.bukkit.plugin.java.JavaPlugin;
+
+import com.comphenix.protocol.reflect.FieldAccessException;
+import com.comphenix.protocol.wrappers.WrappedDataWatcher;
+import com.comphenix.protocol.wrappers.WrappedWatchableObject;
 
 public class LibsDisguises extends JavaPlugin
 {
